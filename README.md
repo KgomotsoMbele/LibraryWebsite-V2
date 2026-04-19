@@ -11,7 +11,7 @@ Built with accessibility, simplicity, and affordability in mind, The Bookery is 
 **Author:** Kgomotso Mbele  
 **Student Number:** ST10467825  
 **Email:** kgomotsombele@outlook.com  
-**Repository:** https://github.com/KgomotsoMbele/LibraryWebsite
+**Repository:** https://github.com/KgomotsoMbele/LibraryWebsite-V2
 
 ---
 
@@ -94,41 +94,19 @@ The broader goal is to improve literacy and preserve access to influential liter
 
 ## 📈 Changelog
 
-### Version 0.1
+### V2.0.0 - Foundation Refactor (In Progress)
+**Architecture & Component System**
+- Implemented DRY component architecture: navigation and footer now inject via `js/components.js` — edit once, update everywhere
+- Established CSS custom properties (`variables.css`) for centralized color palette, spacing scale, and typography
+- Created `reset.css` for consistent cross-browser defaults
+- Fixed mobile hamburger menu animation and toggle functionality
 
-Initial project setup. Core HTML structure created with basic styling applied.
+**File Structure**
+- Reorganized V2 with clean separation: `css/`, `js/`, `assets/`
+- Migrated `index.html` to new component-based structure
+- Set up `.gitignore` for proper repository hygiene
 
-### Version 0.2
-
-Introduced folder structure and placeholder assets.
-
-### Version 0.3
-
-Implemented wireframe-based styling, global navbar and footer, and button animations.
-
-### Version 0.4
-
-Developed hero sections and initial library shelf layout. Identified layout constraints for book displays.
-
-### Version 0.5
-
-Completed library shelves and book downloads. Improved responsiveness across major pages and refined colour palette.
-
-### Version 0.6
-
-Expanded JavaScript functionality and began full mobile testing. Navigation issues identified and documented.
-
-### Version 0.7
-
-Fixed mobile navigation and improved JavaScript robustness. Resolved layout and visibility issues on small screens.
-
-### Version 0.8
-
-SEO enhancements including meta tags, sitemap, and robots.txt. Added basic input validation and conducted accessibility testing.
-
-### Version 0.9
-
-Updated Contact page with Google Maps embed and adjusted CSP. Improved alt text for book covers and verified asset loading.
+**Status:** Homepage fully functional. Remaining pages pending migration to component system.
 
 ---
 
