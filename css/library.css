@@ -1,0 +1,36 @@
+.book-grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center; /* Centers the books in the grid */
+        border: #E2725B solid 1px; /* Adds a border around the grid */
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .book {
+        border: 1px solid #ccc;
+        padding: 5px;
+        text-align: center;
+        width: 150px;
+      }
+      .book img {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .download-btn {
+        margin-top: 10px;
+        display: inline-block;
+        padding: 5px 10px;
+        background: #7f4f24;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      .download-btn:hover {
+        background-color: #414833;
+        color: #fff;
+        transform: scale(1.05); /* Tiny zoom on hover */
+        transition: 0.2s;
+      }

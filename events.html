@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | The Bookery</title>
+    <meta
+      name="description"
+      content="Stay updated on The Bookery’s latest events — from author talks and book launches to reading clubs and community gatherings."
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/embeds.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-group">
+          <a href="index.html">
+            <img
+              src="/assets/bookerylogo.png"
+              alt="The Bookery Logo"
+              class="logo-img"
+            />
+            <h1 class="site-title">The Bookery</h1>
+          </a>
+        </div>
+        <div class="nav-links-container">
+          <ul class="nav-links" id="navMenu">
+            <li><a href="library.html">Library</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="events.html" target="_blank">Events</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+          </ul>
+        </div>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+      <h1>Upcoming Events</h1>
+      <p>Check out our calendar for upcoming events at The Bookery!</p>
+    </header>
+
+    <section class="calendar-section">
+      <div class="iframe-container">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=9d75e37a71a6e0d21c26448791fb24bad8d9456dcb65bd07361dfde0b897e756%40group.calendar.google.com&ctz=Africa%2FJohannesburg"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </section>
+
+    <a href="index.html">
+      <button class="bck-btn">Back to Home</button>
+    </a>
+
+    <footer>
+      <div>
+        <p class="footer">&copy; 2025 The Bookery. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

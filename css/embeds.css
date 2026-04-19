@@ -1,0 +1,210 @@
+/* Contact Page Styles */
+.contact-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: #4B4B4B;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    background-color: #e8e8e8;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.contact-info h2 {
+    color: #4B4B4B;
+    margin-bottom: 1rem;
+}
+
+.contact-detail {
+    margin-bottom: 1rem;
+}
+
+.contact-detail strong {
+    color: #414833;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.contact-detail p {
+    margin: 0;
+    color: #4B4B4B;
+}
+
+.contact-form {
+    background-color: #e8e8e8;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    color: #4B4B4B;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #414833;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #8A9B6E;
+    border-radius: 4px;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #414833;
+    box-shadow: 0 0 5px rgba(65, 72, 51, 0.5);
+}
+
+.submit-btn {
+    background-color: #8A9B6E;
+    color: #4B4B4B;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #414833;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsive iframe container */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;   /* limits how wide it gets on desktop */
+    margin: 0 auto;       /* centers it */
+    padding-top: 75%;     /* aspect ratio: 4:3 (height/width = 0.75) */
+    overflow: hidden;
+}
+
+/* Make iframe fill container */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Optional: scale aspect ratio on very small screens */
+@media (max-width: 480px) {
+    .iframe-container {
+        padding-top: 100%; /* make it taller on very narrow screens */
+    }
+}
+
+/* Contact container - flex for desktop */
+.contact-container {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Contact info & form default widths */
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Form styling */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: 'Merriweather', serif;
+    border-radius: 4px;
+    border: 1px solid #414833;
+}
+
+.submit-btn {
+    background-color: #8A9B6E;
+    color: #fff;
+    border: 2px solid #414833;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #414833;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* Map styling */
+.map-container {
+  margin-top: 18px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src *; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;"
+    />
+
+    <title>Enquiries | The Bookery</title>
+    <meta
+      name="description"
+      content="Submit your enquiries to The Bookery — we’re here to assist with information, book requests, and general support."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-group">
+          <a href="index.html">
+            <img
+              src="assets/bookerylogo.png"
+              alt="The Bookery Logo"
+              class="logo-img"
+            />
+            <h1 class="site-title">The Bookery</h1>
+          </a>
+        </div>
+        <div class="nav-links-container">
+          <ul class="nav-links" id="navMenu">
+            <li><a href="library.html">Library</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="events.html" target="_blank">Events</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+          </ul>
+        </div>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="about-container">
+      <h2>Enquiries / FAQ</h2>
+
+      <section class="about-section">
+        <h3>Frequently Asked Questions</h3>
+        <ul id="faq-list">
+          <li data-key="borrowing">How do I download a book?</li>
+          <li data-key="languages">Which languages are available?</li>
+          <li data-key="events">How do I find events?</li>
+          <li data-key="donations">Can I donate books?</li>
+        </ul>
+      </section>
+
+      <section class="about-section">
+        <h3>Ask a question</h3>
+        <form id="enquiry-form">
+          <label for="q-input"
+            >Type your question or choose a topic above:</label
+          >
+          <input
+            id="q-input"
+            name="question"
+            type="text"
+            placeholder="e.g. How do I download a book?"
+            required
+          />
+          <button type="submit" class="cta-btn" style="min-width: 120px">
+            Get Answer
+          </button>
+        </form>
+
+        <div id="answer" aria-live="polite" style="margin-top: 1rem"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p class="footer">&copy; 2025 The Bookery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/enquiries.js"></script>
+  </body>
+</html>

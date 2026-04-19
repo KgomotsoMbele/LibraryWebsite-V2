@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+  http-equiv="Content-Security-Policy"
+  content="
+    default-src 'self';
+    img-src *;
+    script-src 'self' https://www.google.com https://maps.googleapis.com;
+    style-src 'self' https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
+    frame-src https://www.google.com https://www.google.co.za;
+  "
+/>
+
+    <title>Contact Us | The Bookery</title>
+    <meta
+      name="description"
+      content="Get in touch with The Bookery team for inquiries, feedback, or partnership opportunities. We’d love to hear from you."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/embeds.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-group">
+          <a href="index.html">
+            <img src="assets/bookerylogo.png" alt="The Bookery Logo" class="logo-img" />
+            <h1 class="site-title">The Bookery</h1>
+          </a>
+        </div>
+        <div class="nav-links-container">
+          <ul class="nav-links" id="navMenu">
+            <li><a href="library.html">Library</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="events.html" target="_blank">Events</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+          </ul>
+        </div>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+      <h1>Contact Us!</h1>
+    </header>
+
+    <main class="contact-container">
+      <!-- Contact Information Section -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <div class="contact-detail">
+          <strong>Email Address:</strong>
+          <p>Mbeki.T@bookery.org.za</p>
+        </div>
+        <div class="contact-detail">
+          <strong>Address:</strong>
+          <p>129 Main Road, Observatory, Cape Town</p>
+        </div>
+        <div class="contact-detail">
+          <strong>Phone Number:</strong>
+          <p>071 234 5678</p>
+        </div>
+
+        <!-- Google Map Embed (safe placement) -->
+        <div class="map-container" aria-hidden="false">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5566.800714695968!2d18.470550504557803!3d-33.940111931344944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d1b766b0f11%3A0x74c63b6f1c5eb111!2sObz%20Square!5e0!3m2!1sen!2sza!4v1762121971620!5m2!1sen!2sza"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map to The Bookery - Obz Square, Cape Town">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="contact-form">
+        <h2>Send us a Message!</h2>
+        <form action="https://formspree.io/f/mdklkadb" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </main>
+
+    <a href="index.html">
+      <button class="bck-btn">Back to Home</button>
+    </a>
+
+    <footer>
+      <div>
+        <p class="footer">&copy; 2025 The Bookery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="javascript/script.js" defer></script>
+  </body>
+</html>

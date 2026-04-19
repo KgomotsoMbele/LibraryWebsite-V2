@@ -1,0 +1,29 @@
+/* css/variables.css */
+
+:root {
+  /* Your exact colors */
+  --color-dark: #4B4B4B;
+  --color-brown: #A68A64;
+  --color-green-dark: #414833;
+  --color-green: #8A9B6E;
+  --color-beige: #c2c5aa;
+  --color-gold: #FFD166;
+  --color-white: #fff;
+  --color-shadow: #333d29;
+  
+  /* Typography */
+  --font-body: 'Merriweather', serif;
+  
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  
+  /* Shadows */
+  --shadow-title: 2px 2px 5px var(--color-shadow);
+  --shadow-title-hover: 3px 3px 8px var(--color-green-dark);
+  --shadow-btn: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-btn-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
